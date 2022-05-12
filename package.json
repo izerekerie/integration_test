@@ -1,0 +1,23 @@
+{
+  "name": "integration_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "node index",
+    "dev":"nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest":{
+    "modulePathIgnorePatterns":["books.json"]
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
